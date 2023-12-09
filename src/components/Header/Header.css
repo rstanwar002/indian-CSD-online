@@ -1,0 +1,168 @@
+.header {
+  width: 100%;
+  background-color: #52c1ed;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 2px;
+}
+
+
+
+.icon_Sopping_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 40%;
+}
+.shoppe_icon_box{
+  display: flex;
+  flex-direction: row-reverse;
+  border: 3px solid white;
+  border-radius: 10px;
+  align-items: center;
+
+}
+.icon-info-container{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+  
+}
+.shoppe_icon_box,
+.mark_icon_box {
+  position: relative;
+}
+
+.shoppe_icon_box:hover .shop_icon {
+  transform: translateY(-3px);
+}
+
+.mark_icon_box:hover .mark_icon {
+  transform: translateY(-3px);
+}
+
+.shop_icon {
+  color: #fff;
+  font-size: 40px;
+  transition: all 0.3s;
+}
+
+.mark_icon {
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+.badge_shope,
+.badge_mark {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -3px;
+  bottom: 0;
+  border-radius: 20%;
+  background-color: tomato;
+  font-size: 15px;
+  color: #fff;
+}
+
+.badge_mark {
+  right: -5px;
+  bottom: -5px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+}
+
+.search_header {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-logo-container{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  background: white;
+  flex-wrap: wrap;
+}
+.header-logo-container img{
+  height: 150px;
+
+}
+.defense-logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+    opacity: 0;
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.8, 0.66, 0.66) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+.tada {
+  animation-name: tada;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+
+@media screen and (max-width: 660px) {
+  .search_header {
+    display: none;
+  }
+}
